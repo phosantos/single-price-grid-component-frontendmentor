@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(204, 43%, 93%);
+}
+
+.container {
+  /* max-width: 650px; */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  box-shadow: 0px 0px 14px 1px #00000024;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: hsl(179, 62%, 43%);
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.125rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.item-1 {
+  padding: 40px;
+  grid-column: 1/-1;
+  background: white;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.item-1 h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.item-1 p {
+  color: hsl(218, 22%, 67%);
+  max-width: 600px;
+}
+
+.item-2 {
+  padding: 40px;
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  background: hsl(179, 62%, 43%);
+  border-radius: 0px 0px 0px 8px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price span:first-child {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.price span:last-child {
+  opacity: 60%;
+}
+
+.item-2 a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  background: hsl(71, 73%, 54%);
+  color: white;
+  font-weight: 700;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.item-2 a:hover {
+  background: white;
+  color: hsl(179, 62%, 43%);
+}
+
+.item-3 {
+  padding: 40px;
+  background: hsl(179, 47%, 52%);
+  border-radius: 0px 0px 8px 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.item-3 ul li {
+  font-size: 0.875rem;
+  color: white;
+  opacity: 70%;
+}
+
+.item-3 ul li + li {
+  margin-top: 8px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 375px;
+    margin: 50px auto;
+  }
+  .item-1,
+  .item-2,
+  .item-3 {
+    padding: 30px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .price span:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .item-2 {
+    border-radius: 0px;
+  }
+  .item-3 {
+    border-radius: 0px 0px 8px 8px;
+  }
+}
