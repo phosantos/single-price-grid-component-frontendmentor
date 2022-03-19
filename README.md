@@ -9,4 +9,4 @@ Mobile screenshot:
 
 ![Mobile screenshot for the Single price grid component coding challenge](./screenshots/screenshot-mobile.jpg)
 
-- Live Site URL: [phosantos.github.io/single-price-grid-component-master/](https://phosantos.github.io/single-price-grid-component-master/)
+- Live Site URL: [phosantos.github.io/single-price-grid-component-frontendmentor/](https://phosantos.github.io/single-price-grid-component-frontendmentor/)
